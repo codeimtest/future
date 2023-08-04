@@ -1,0 +1,49 @@
+/* USER VARIABLES SECTION */
+
+:root {
+	--accent: #7D00F5;
+	--text: #fff;
+	--regular-text: 24px;
+	--lineheight: 1.4;
+	--userfont: montserrat, sans-serif;
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+}
+
+/* BOOTSTRAP SETTINGS SECTION */
+
+/* gutter 20px (10px + 10px). Comment this code for default gutter start at 1.5rem (24px) wide. */
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl { --bs-gutter-x: .625rem; }
+.row, .row > * { --bs-gutter-x: 1.25rem; }
+
+/* FONTS LOAD SECTION */
+
+@font-face { src: url("../fonts/Montserrat-Regular.woff2") format("woff2"); font-family: "montserrat"; font-weight: 400; font-style: normal; }
+@font-face { src: url("../fonts/Montserrat-Bold.woff2") format("woff2"); font-family: "montserrat"; font-weight: 700; font-style: normal; }
+@font-face { src: url("../fonts/Montserrat-Black.woff2") format("woff2"); font-family: "montserrat"; font-weight: 900; font-style: normal; }
+
+/* GENERAL CSS SETTINGS */
+
+::placeholder { color: #666; }
+::selection { background-color: var(--accent); color: #fff; }
+input, textarea { outline: none; }
+input:focus:required:invalid, textarea:focus:required:invalid { border-color: red; }
+input:required:valid, textarea:required:valid { border-color: green; }
+
+body {
+	font-family: var(--userfont);
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+	color: var(--text);
+	min-width: 320px;
+	position: relative;
+	overflow-x: hidden;
+}
+h1,.like-one,h2,.like-two,h3,.like-three,h4,.like-four,h5,.like-five{
+	font-size: 900;
+	margin-bottom: 34px;
+}
+h1,.like-one{font-size: 48px;}
+h2,.like-two{font-size: 32px;}
+h3,.like-three{font-size: 28px;}
+h4,.like-four{font-size: 24px;}
+h5,.like-five{font-size: 20px;}
